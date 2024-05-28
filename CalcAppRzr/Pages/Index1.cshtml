@@ -1,0 +1,21 @@
+﻿@page
+@model MyPageModel
+@{
+    ViewData["Title"] = "My Page";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <p>Input1:</p>
+    <input type="text" asp-for="Input1" />
+    <p>Input2:</p>
+    <input type="text" asp-for="Input2" />
+    <p>Input3:</p>
+    <input type="text" asp-for="Input3" />
+
+    <input type="submit" value="Submit" />
+</form>
+
+<p>Output1:</p>
+<p>@Model.Output</p>
